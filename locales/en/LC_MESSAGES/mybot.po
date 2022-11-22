@@ -1,0 +1,92 @@
+# English translations for PROJECT.
+# Copyright (C) 2022 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2022.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2022-11-23 04:08+0600\n"
+"PO-Revision-Date: 2022-11-23 04:08+0600\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.9.1\n"
+
+#: main.py:55
+msgid "📅 Bugungi ob-havo"
+msgstr ""
+
+#: utils.py:65
+msgid "Tashkent"
+msgstr ""
+
+#: utils.py:66
+msgid "Samarkand"
+msgstr ""
+
+#: utils.py:67
+msgid "Navoiy"
+msgstr ""
+
+#: utils.py:68
+msgid "Nukus"
+msgstr ""
+
+#: utils.py:69
+msgid "Xiva"
+msgstr ""
+
+#: utils.py:70
+msgid "Urgench"
+msgstr ""
+
+#: utils.py:71
+msgid "Farg'ona"
+msgstr ""
+
+#: utils.py:72
+msgid "Andijon"
+msgstr ""
+
+#: utils.py:73
+msgid "Namangan"
+msgstr ""
+
+#: utils.py:74
+msgid "Termiz"
+msgstr ""
+
+#: utils.py:75
+msgid "Qarshi"
+msgstr ""
+
+#: utils.py:76
+msgid "Buxoro"
+msgstr ""
+
+#: utils.py:77
+msgid "Jizzax"
+msgstr ""
+
+#: utils.py:125
+msgid ""
+"Bugun, {cur_day}\n"
+"{status_ico} {sign_max} {max_t}°C  {sign_min}{min_t}C°\n"
+"{morning_smile} Tong {sign_morning} {morning_cur}C° "
+"({sign_morning2}{morning2} kabi seziladi)\n"
+"{afternoon_smile} Kun {sign_afternoon} {afternoon_cur}C° "
+"({sign_afternoon2}{afternoon2} kabi seziladi)\n"
+"{nightly_smile} Oqshom {sign_nightly} {nightly_cur}C° "
+"({sign_nightly2}{nightly2} kabi seziladi)\n"
+"Namlik: {namlik}%\n"
+"Quyosh chiqishi: {sunrise}\n"
+"Quyosh botishi: {sunset}\n"
+"@pogodas"
+msgstr ""
+
