@@ -6,7 +6,7 @@ from tasks import set_scheduled_jobs
 
 from configs import i18n, TOKEN
 from db import collusers, insert_new_user, get_current_user_col, update_notify_hours_by_user_id, \
-    update_city_hours_by_user_id
+    update_city_hours_by_user_id, user_counts
 from utils import get_current_user_weather_data, get_text, SCHEDULED_HOURS, cities, get_key_from_dict_value
 
 bot = Bot(token=TOKEN)
@@ -126,6 +126,11 @@ async def city_setting_button(msg: types.Message):
     city_key = get_key_from_dict_value(city_name)
     await update_city_hours_by_user_id(msg.from_user.id, city_key)
     await msg.answer(_("{city_name} shahri tanlandi").format(city_name=city_name), reply_markup=main_menu_kbs)
+
+
+@dp.message_handler(lambda msg: msg.text == "/users_count")
+async def get_users_count(msg: types.Message):
+    await msg.answer("Users count: {}".format(await user_counts()))
 
 
 @dp.message_handler(lambda msg: msg.text == _("📍 Shaharni o'zgartirish"))

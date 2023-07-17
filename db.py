@@ -1,7 +1,7 @@
 import motor.motor_asyncio
 import pprint
 
-client = motor.motor_asyncio.AsyncIOMotorClient('localhost', 27017)
+client = motor.motor_asyncio.AsyncIOMotorClient('127.0.0.1', 27017)
 db = client.test_collection
 collusers = db.collusers
 
@@ -86,19 +86,20 @@ async def get_all_active_users_with_hour(hour):
         users.append(document)
     return users
 
-# async def do_delete_one():
-#     coll = db.collusers
-#
-#     n = await coll.count_documents({})
-#
-#     print('%s documents before calling delete_one()' % n)
-#
-#     result = await collusers.delete_one({'_id': 390736292})
-#     print(result)
-#
-#     print('%s documents after' % (await coll.count_documents({})))
-#
-#
+async def do_delete_one():
+    coll = db.collusers
+    n = await coll.count_documents({})
+
+    print('%s documents before calling delete_one()' % n)
+
+    result = await collusers.delete_one({'_id': 390736292})
+    print(result)
+    print('%s documents after' % (await coll.count_documents({})))
+
 # loop = client.get_io_loop()
-#
+# print("LOOP")
 # loop.run_until_complete(do_delete_one())
+
+async def user_counts():
+    count = await db.collusers.count_documents({})
+    return count
